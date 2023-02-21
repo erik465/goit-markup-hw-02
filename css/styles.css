@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
 
 :root{
     --navy-blue: #2E2F42;
     --slate: #434455;
-    --irit: #4D5AE5;
+    --iris: #4D5AE5;
     --cornflower: #E7E9FC;
+    --ocean: #404BBF;
 }
  body{
     font-family: 'Roboto', sans-serif;
-    color: var(--slate)
+    color: var(--slate);
+    background: #fff;
  }
 
  a{
@@ -23,7 +24,16 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 1.34;
-    color: var(--slate);
+    letter-spacing: 0.03em;
+    color: var(--iris);
+}
+
+.header-logo-color{
+    color: var(--navy-blue);
+}
+
+.footer-logo-color{
+    color: #F4F4FD;
 }
 
 .header-list{
@@ -34,7 +44,12 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--navy-blue);
+}
+
+.header-list-item a:hover, .header-list-item a:focus{
+    color: var(--ocean)
 }
 
 .header-contacts-list{
@@ -42,17 +57,22 @@
 }
 
 .header-contacts-list-item a{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--slate)
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.header-contacts-list-item a:hover, .header-contacts-list-item a:focus{
+    color: var(--ocean);
 }
 
 .hero-heading{
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     color:#ffffff;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 .hero{
     background: var(--navy-blue);
@@ -65,6 +85,14 @@
     color:#fff;
     cursor: pointer;
     background: var(--iris);
+    letter-spacing: 0.04em;
+    font-family: "Roboto", sans-serif;
+    border: none;
+
+}
+
+.hero-btn:hover, .hero-btn:focus{
+    background: var(--ocean);
 }
 
 .features-list{
@@ -75,20 +103,25 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    letter-spacing: 0.02em;
+
     color: var(--navy-blue);
 }
 
 .features-list-item-desc{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
+
 }
 
 .about-heading{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     color: var(--navy-blue);
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 .about-list{
@@ -100,10 +133,12 @@
 }
 
 .team-heading{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     color: var(--navy-blue);
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize; 
 }
 
 .team-list{
@@ -115,13 +150,16 @@
     font-size: 20px;
     line-height: 1.2;
     color: var(--navy-blue);
+    text-align: center;
+    letter-spacing: 0.02em;
 
 }
 
 .team-list-item-role{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 
 .footer{
@@ -130,10 +168,11 @@
 }
 
 .footer-text{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: var(--cornflower);
+    letter-spacing: 0.02em;
+
 }
 
 
@@ -151,13 +190,15 @@
     background: var(--cornflower);
     color: var(--iris);
     border: none;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    cursor:pointer;
 }
 
 .filters-list-item button:hover, .filters-list-item button:focus{
-    background: #404BBF;
+    background: var(--ocean);
     color: #fff;
 }
 
