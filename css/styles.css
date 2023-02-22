@@ -14,8 +14,7 @@
 
  a{
     text-decoration: none;
-    font-style: normal;
-    cursor: pointer;
+  
 
 }
 
@@ -102,7 +101,7 @@
 .features-list-item-heading{
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 
     color: var(--navy-blue);
